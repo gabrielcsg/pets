@@ -12,11 +12,12 @@
 <body>
     <h1 align="center" style="margin-top: 50px;">New Pet</h1>
     <div class="container" style="display: flex; align-items: center; justify-content:center; flex-direction: column;">
-        <form method="post" action="" style="display:flex; flex-direction: column;">
+        <form method="post" action="/new" style="display:flex; flex-direction: column;">
             @csrf
             Name: <input type="text" name="name" required style="margin-bottom: 8px;" />
             Breed: <input type="text" name="breed" required style="margin-bottom: 8px;" />
-            Size: <input type="text" name="size" required />
+            Size: <input type="text" name="size" required style="margin-bottom: 8px;" />
+            Gender: <input type="text" name="gender" required />
             <button type="submit" style="margin-top: 20px; cursor: pointer;">Save</button>
             <a href="/" style="margin-top: 10px; text-align: center;">Cancel</a>
         </form>
